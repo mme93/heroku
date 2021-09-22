@@ -3,12 +3,14 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
-        "test": "ng test",
+        "start": "ng build && node server/server.js",
+        "build": "ng build && node server/server.js",
+        "run-watch": "ng build && node server/server.js",
+        "preinstall": "npm install -g @angular/cli",
+        "postinstall": "ng build --aot -prod",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "postinstall": "ng build --aot --prod"
+        "watch": "npm-watch"
     },
     "private": true,
     "dependencies": {
