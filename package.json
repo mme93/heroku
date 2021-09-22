@@ -5,12 +5,11 @@
         "ng": "ng",
         "start": "ng build && node server/server.js",
         "build": "ng build && node server/server.js",
-        "run-watch": "ng build && node server/server.js",
-        "preinstall": "npm install -g @angular/cli",
-        "postinstall": "ng build --aot -prod",
+        "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "watch": "npm-watch"
+        "preinstall": "npm install -g @angular/cli",
+        "postinstall": "ng build --aot --prod"
     },
     "private": true,
     "dependencies": {
